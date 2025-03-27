@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./nav.module.css"; // Asegúrate de tener el archivo de estilos
+import Toogle_dk from "../toggle_dk/toggle_dk";
 
 const Nav = () => {
   const [isBlurred, setIsBlurred] = useState(false);
@@ -40,6 +41,9 @@ const Nav = () => {
         <Link href="/contact" className={styles.page}>
           Contacto
         </Link>
+        <div className={styles.color_toggle}>
+          <Toogle_dk />
+        </div>
       </div>
     </nav>
   );
