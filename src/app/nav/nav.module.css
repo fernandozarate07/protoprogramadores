@@ -1,6 +1,7 @@
 /* nav.module.css */
 
 .nav {
+  height: 80px;
   padding-inline: 100px;
   position: sticky;
   top: 0;
@@ -22,7 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 78px;
   font-size: var(--size-s);
 }
 
@@ -31,10 +32,11 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  gap: 10px;
 }
 
 .logo_text {
-  font-size: var(--size-l);
+  font-size: var(--size-m);
 }
 .page {
   transition: ease 0.3s;

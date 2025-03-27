@@ -14,10 +14,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* border-bottom: 2px solid var(--white); */
+  /* border-bottom: 1px solid var(--purple); */
 }
 .title {
-  font-size: var(--size-xl);
+  font-size: var(--size-xxl);
   text-align: center;
   letter-spacing: 2px;
 }
@@ -31,6 +31,7 @@
 }
 .card {
   max-width: 400px;
+  min-height: 400px;
   padding: 40px;
 
   display: flex;
@@ -46,6 +47,8 @@
 .card_title {
   text-align: center;
   font-size: var(--size-m);
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--purple);
 }
 .card_description {
   line-height: 1.8;

@@ -1,6 +1,6 @@
 .hero {
   width: 100vw;
-  height: calc(100vh - 80px);
+  height: 100vh;
 
   padding-inline: 100px;
   padding-bottom: 80px;
@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* border-bottom: 2px solid var(--white); */
+  /* border-bottom: 1px solid var(--purple); */
 }
 .text_container {
   display: flex;
@@ -26,9 +26,11 @@
   font-size: var(--size-xxl);
   letter-spacing: 2px;
 }
+.text span {
+  color: var(--purple);
+}
 .description {
   line-height: 1.8;
-  font-size: var(--size-s);
 }
 .strong {
   color: var(--blue);

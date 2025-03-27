@@ -6,6 +6,7 @@
   --blue: #4c82c6;
   --gray: #e5e5e5;
   --white-blur: rgba(255, 255, 255, 0.1);
+  --gradient: linear-gradient(135deg, var(--purple) 0%, var(--blue) 100%);
 
   --size-xxs: 8px;
   --size-xs: 16px;
@@ -25,6 +26,8 @@ body {
   color: var(--white);
   overflow-x: hidden;
   letter-spacing: 1px;
+  transition: ease 1s;
+  font-size: var(--size-s);
 }
 a {
   color: inherit;

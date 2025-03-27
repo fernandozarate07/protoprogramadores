@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import Hero from "./section/hero/hero";
 import Services from "./section/service/services";
 import Faq from "./section/faq/faq";
+import Footer from "./footer/footer";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <Hero />
         <Services />
         <Faq />
+        <Footer />
       </main>
     </div>
   );

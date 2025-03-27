@@ -6,7 +6,9 @@ export default function Hero() {
   return (
     <div className={styles.hero}>
       <div className={styles.text_container}>
-        <h1 className={styles.text}>Vos tranqui, de tu web nos encargamos nosotros.</h1>
+        <h1 className={styles.text}>
+          <span>Vos</span> tranqui, de tu web nos encargamos <span>nosotros</span>.
+        </h1>
         <p className={styles.description}>
           Nuestro objetivo es
           <span className={styles.strong}> IMPULSAR el crecimiento de empresas y emprendedores </span>con una presencia
