@@ -20,8 +20,8 @@ export default function Hero() {
         <Image
           src="/image/hero/hero_img.svg"
           alt="imagen del hero"
-          width={700}
-          height={700}
+          width={600}
+          height={600}
           className={styles.hero_img}
         />
       </div>

@@ -5,8 +5,12 @@
   --purple: #6a0dad;
   --blue: #4c82c6;
   --gray: #e5e5e5;
+  --gray-op: rgba(229, 229, 229, 0.5);
+
   --white-blur: rgba(255, 255, 255, 0.1);
   --gradient: linear-gradient(135deg, var(--purple) 0%, var(--blue) 100%);
+  --purple-op: rgba(106, 13, 173, 0.5);
+  --black-op: rgba(0, 0, 0, 0.5);
 
   --size-xxs: 8px;
   --size-xs: 16px;

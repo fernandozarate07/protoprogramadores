@@ -21,7 +21,7 @@
   right: 0;
   bottom: 0;
 
-  background: var(--purple);
+  background: var(--white);
   transition: 0.2s;
   border-radius: 40px;
 }
@@ -38,7 +38,7 @@
   transition: 0.3s;
 }
 input:checked + .slider::before {
-  background-color: var(--white);
+  background-color: var(--purple);
 }
 input:checked + .slider:before {
   transform: translateX(1.9em);

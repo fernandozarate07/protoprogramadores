@@ -19,7 +19,8 @@ export default function Footer() {
         {/* box 2 */}
         <div className={styles.box}>
           <h3 className={styles.item_title}>EMAIL</h3>
-          <p className={styles.item_description}>contacto@protoprogramadores.com</p>
+          <p className={styles.item_description}>contacto@</p>
+          <p className={styles.item_description}>protoprogramadores.com</p>
         </div>
         {/* box 3 */}
         <div className={styles.box}>
@@ -53,9 +54,9 @@ export default function Footer() {
         <Image
           src="/image/logo.svg"
           alt="imagen de avatar de perfil"
-          className={styles.logo}
-          width={250}
-          height={250}
+          className={styles.hero_img}
+          width={200}
+          height={200}
         />
         <Button_one content={"Contáctanos"} />
       </div>

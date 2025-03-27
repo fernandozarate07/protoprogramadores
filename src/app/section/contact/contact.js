@@ -7,17 +7,11 @@ export default function Contact() {
         <form className={styles.form}>
           <div className={styles.form_group}>
             <label htmlFor="email">Nombre propio o el de tu empresa.</label>
-            <input type="text" id="email" name="email" placeholder="Protoprogramadores" required />
+            <input type="text" id="email" name="email" required />
           </div>
           <div className={styles.form_group}>
             <label htmlFor="textarea">¿Cómo podemos ayudarte?</label>
-            <textarea
-              name="textarea"
-              id="textarea"
-              rows="10"
-              cols="50"
-              placeholder="Cuéntanos más sobre tu proyecto."
-              required></textarea>
+            <textarea name="textarea" id="textarea" rows="10" cols="50" required></textarea>
           </div>
           <div className={styles.button_container}>
             <button className={styles.form_submit_btn} type="submit">

@@ -33,7 +33,7 @@ const Nav = () => {
   return (
     <nav className={`${styles.nav} ${isBlurred ? styles.blurred : ""}`}>
       <Link href="/" className={styles.logo_container}>
-        <Image src="/image/logo.svg" alt="imagen de avatar de perfil" className={styles.logo} width={50} height={50} />
+        <Image src="/image/logo.svg" alt="imagen de avatar de perfil" className={styles.logo} width={60} height={60} />
         <span className={styles.logo_text}>Protoprogramadores</span>
       </Link>
 
