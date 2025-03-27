@@ -1,6 +1,6 @@
 .services {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 
   padding-inline: 100px;
   padding-block: 80px;
@@ -9,6 +9,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 80px;
 
   background-image: url("../../../../public/image/services/services_background.svg");
   background-repeat: no-repeat;
@@ -52,4 +53,16 @@
 }
 .card_description {
   line-height: 1.8;
+}
+@media (max-width: 1024px) {
+  .card_container {
+    height: auto;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .services {
+    padding-inline: 20px;
+  }
 }

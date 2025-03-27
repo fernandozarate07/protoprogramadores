@@ -16,6 +16,7 @@ export default function Toggle_dk() {
     if (light) {
       document.body.style.background = "#ffffff";
       document.body.style.color = "#000000";
+      document.body.style.transition = "ease .3s";
     } else {
       document.body.style.background = "";
       document.body.style.color = "";

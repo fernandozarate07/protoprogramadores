@@ -17,7 +17,13 @@ export default function Hero() {
         <Button_one content={"Empezar"} />
       </div>
       <div className={styles.image_container}>
-        <Image src="/image/hero/hero_img.svg" alt="imagen del hero" width={700} height={700} />
+        <Image
+          src="/image/hero/hero_img.svg"
+          alt="imagen del hero"
+          width={700}
+          height={700}
+          className={styles.hero_img}
+        />
       </div>
     </div>
   );

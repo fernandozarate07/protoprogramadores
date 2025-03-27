@@ -1,6 +1,6 @@
 .hero {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 80px);
 
   padding-inline: 100px;
   padding-bottom: 80px;
@@ -13,7 +13,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* border-bottom: 1px solid var(--purple); */
 }
 .text_container {
   display: flex;
@@ -37,4 +36,23 @@
 }
 .hero_img {
   z-index: 10;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding-top: 80px;
+    height: auto;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    gap: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    padding-inline: 20px;
+  }
+  .hero_img {
+    width: 400px !important;
+    height: 400px !important;
+  }
 }
