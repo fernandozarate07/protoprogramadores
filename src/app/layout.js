@@ -2,6 +2,7 @@ import Image from "next/image";
 import "./globals.css";
 import Link from "next/link";
 import { Questrial, Host_Grotesk } from "next/font/google";
+import Nav from "./nav/nav";
 // import { FaHome, FaCode, FaSlackHash } from "react-icons/fa";
 
 export const metadata = {
@@ -21,7 +22,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={questrial.className}>
       <body>
-        <nav className={host_grotesk.className}>
+        <Nav />
+        {/* <nav className={host_grotesk.className}>
           <Link href="/" className="logo_container">
             <Image src="/image/logo.svg" alt="imagen de avatar de perfil" className="logo" width={80} height={80} />
             <span className="logo_text">Protoprogramadores</span>
@@ -37,7 +39,7 @@ export default function RootLayout({ children }) {
               Contacto
             </Link>
           </div>
-        </nav>
+        </nav> */}
         {children}
       </body>
     </html>

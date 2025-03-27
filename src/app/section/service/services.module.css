@@ -1,6 +1,6 @@
 .services {
   width: 100vw;
-  height: calc(100vh - 80px);
+  height: 100vh;
 
   padding-inline: 100px;
   padding-block: 80px;
@@ -19,6 +19,7 @@
 .title {
   font-size: var(--size-xl);
   text-align: center;
+  letter-spacing: 2px;
 }
 
 .card_container {
@@ -48,5 +49,4 @@
 }
 .card_description {
   line-height: 1.8;
-  letter-spacing: 1px;
 }

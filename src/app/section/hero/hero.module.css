@@ -24,10 +24,10 @@
 }
 .text {
   font-size: var(--size-xxl);
+  letter-spacing: 2px;
 }
 .description {
   line-height: 1.8;
-  letter-spacing: 1px;
   font-size: var(--size-s);
 }
 .strong {

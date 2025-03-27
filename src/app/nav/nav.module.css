@@ -1,0 +1,45 @@
+/* nav.module.css */
+
+.nav {
+  padding-inline: 100px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  transition: background-color 0.3s, backdrop-filter 0.3s;
+}
+
+.blurred {
+  background: rgba(26, 26, 26, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  font-size: var(--size-s);
+}
+
+.logo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo_text {
+  font-weight: 800;
+  font-size: var(--size-m);
+}
+.page {
+  transition: ease 0.3s;
+}
+.page:hover {
+  color: var(--purple);
+}
