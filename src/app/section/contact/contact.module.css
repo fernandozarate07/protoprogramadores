@@ -1,9 +1,9 @@
 .contact {
   width: 100vw;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 60px); /*60 px de nav*/
 
-  padding-inline: 100px;
-  padding-block: 80px;
+  padding-bottom: 60px; /* solo en este caso por el nav , en otro caso block*/
+  padding-inline: 120px;
 
   display: flex;
   justify-content: center;
@@ -96,4 +96,23 @@
 .form_submit_btn:hover {
   background-color: var(--white);
   color: var(--black);
+}
+@media (max-width: 1024px) {
+  .contact {
+    height: auto;
+
+    padding-block: 30px;
+    padding-inline: 60px;
+
+    background-image: none;
+  }
+  .form_container {
+    min-width: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .contact {
+    padding-inline: 30px;
+  }
 }
