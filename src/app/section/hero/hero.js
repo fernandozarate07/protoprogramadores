@@ -11,8 +11,8 @@ export default function Hero() {
         </h1>
         <p className={styles.description}>
           Nuestro objetivo es
-          <span className={styles.strong}> IMPULSAR el crecimiento de empresas y emprendedores </span>con una presencia
-          online que destaque y los ayude a alcanzar sus metas.
+          <span className={styles.strong}> IMPULSAR </span>el crecimiento de empresas y emprendedores con una presencia
+          online que destaque y los ayude a alcanzar sus<span className={styles.strong}> METAS</span>.
         </p>
         <Button_one content={"Empezar"} />
       </div>
