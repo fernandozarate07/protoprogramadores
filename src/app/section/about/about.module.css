@@ -1,13 +1,14 @@
 .about {
   width: 100vw;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 60px); /*60 px de nav*/
 
-  padding-inline: 100px;
-  padding-block: 80px;
+  padding-bottom: 60px; /* solo en este caso por el nav , en otro caso block*/
+  padding-inline: 120px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 60px;
 
   background-image: url("../../../../public/image/about/about_background.svg");
   background-repeat: no-repeat;
@@ -45,4 +46,30 @@
 }
 .link_web:hover {
   color: var(--purple);
+}
+@media (max-width: 1024px) {
+  .about {
+    height: auto;
+
+    padding-block: 30px;
+    padding-inline: 60px;
+
+    flex-direction: column;
+
+    background-image: none;
+  }
+  .description_container {
+    max-width: none;
+    width: 100%;
+    gap: 30px;
+  }
+  .description_links {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    padding-inline: 30px;
+  }
 }
