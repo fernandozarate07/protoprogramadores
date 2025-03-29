@@ -13,9 +13,8 @@
   transition: background-color 0.3s, backdrop-filter 0.3s;
 }
 
-.blurred {
-  background: rgba(26, 26, 26, 0.2);
-  backdrop-filter: blur(10px);
+.nav_color {
+  background: var(--blue);
 }
 
 .nav_bar {
@@ -37,17 +36,18 @@
 .logo_text {
   font-size: var(--size-m);
 }
-.page {
-  transition: ease 0.3s;
+.nav_item {
+  transition: transform 0.2s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
-.page:hover {
-  color: var(--purple);
+
+.nav_item:hover {
+  transform: translateY(-2px);
 }
 /* burger */
 .hamburger {
   cursor: pointer;
   padding: 2px;
-  background-color: var(--purple);
+  background-color: var(--blue);
   border-radius: 40px 40px 0 40px;
 }
 
@@ -98,7 +98,7 @@
     align-items: flex-start;
 
     border-radius: 40px 0px 40px 40px;
-    background: var(--purple);
+    background: var(--blue);
     color: var(--white);
     opacity: 0;
     visibility: hidden;
@@ -119,6 +119,10 @@
 @media (max-width: 768px) {
   .nav {
     padding-inline: 30px;
+    background-color: transparent;
+  }
+  .nav_color {
+    background-color: transparent;
   }
   .hero_img {
     width: 400px;

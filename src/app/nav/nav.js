@@ -8,15 +8,15 @@ import Toogle_dk from "../toggle_dk/toggle_dk";
 import { FaBars } from "react-icons/fa6";
 
 const Nav = () => {
-  const [isBlurred, setIsBlurred] = useState(false);
+  const [isColor, setIsColor] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 40) {
-        setIsBlurred(true);
+        setIsColor(true);
       } else {
-        setIsBlurred(false);
+        setIsColor(false);
       }
     };
     window.addEventListener("scroll", handleScroll);
@@ -31,7 +31,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className={`${styles.nav} ${isBlurred ? styles.blurred : ""}`}>
+    <nav className={`${styles.nav} ${isColor ? styles.nav_color : ""}`}>
       <Link href="/" className={styles.logo_container}>
         <Image src="/image/logo.svg" alt="imagen de avatar de perfil" className={styles.logo} width={60} height={60} />
         <span className={styles.logo_text}>Protoprogramadores</span>
@@ -41,13 +41,13 @@ const Nav = () => {
         <div className={styles.color_toggle}>
           <Toogle_dk />
         </div>
-        <Link href="/" className={styles.page} onClick={() => setIsChecked(false)}>
+        <Link href="/" className={styles.nav_item} onClick={() => setIsChecked(false)}>
           Inicio
         </Link>
-        <Link href="/about" className={styles.page} onClick={() => setIsChecked(false)}>
+        <Link href="/about" className={styles.nav_item} onClick={() => setIsChecked(false)}>
           Sobre Nosotros
         </Link>
-        <Link href="/contact" className={styles.page} onClick={() => setIsChecked(false)}>
+        <Link href="/contact" className={styles.nav_item} onClick={() => setIsChecked(false)}>
           Contacto
         </Link>
       </div>

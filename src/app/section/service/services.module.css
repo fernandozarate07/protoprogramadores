@@ -39,10 +39,9 @@
   flex-direction: column;
   gap: 30px;
 
-  background: rgba(106, 13, 173, 0.1);
-  box-shadow: 0 8px 32px 4px rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: var(--purple-op);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
 }
 .card_title {
@@ -73,7 +72,6 @@
   }
   .card {
     background: var(--gray-op);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
   }

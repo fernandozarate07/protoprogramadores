@@ -24,6 +24,7 @@
 }
 .title {
   font-size: var(--size-xxl);
+  padding-top: 60px;
 }
 .logo {
   font-size: var(--size-m);
@@ -42,6 +43,9 @@
   align-items: flex-end;
 }
 .link_web {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   transition: ease 0.3s;
 }
 .link_web:hover {
@@ -63,9 +67,15 @@
     width: 100%;
     gap: 30px;
   }
+  .title {
+    padding-top: 0px;
+  }
   .description_links {
     width: 100%;
     justify-content: flex-start;
+  }
+  .link_web {
+    transition: ease 0.3s;
   }
 }
 @media (max-width: 768px) {
