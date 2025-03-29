@@ -36,6 +36,9 @@
 .title {
   font-size: var(--size-xxl);
 }
+.description_title {
+  line-height: 1.8;
+}
 .title span {
   color: var(--purple);
 }
@@ -46,6 +49,9 @@
 }
 .item_title {
   font-size: var(--size-m);
+}
+.item_description {
+  line-height: 1.8;
 }
 .social_container {
   display: flex;
